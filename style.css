@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    background: grey;
+    height: 657px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 300px;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 300px);
+    grid-row: fit-content(180px);
+}
+
+.box1 {
+    grid-column: 1 / -1;
+    padding: 30px;
+    background: #fff;
+}
+
+h1 {
+    color: #2ab2af;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #c0df34;
+}
+
+.first-pgraph {
+    font-weight: 400;
+    font-size: 16px;
+    width: 500px;
+    color: #98a6bd;
+    margin-top: 10px;
+}
+
+.box2 {
+    font-size: 16px;
+    padding: 30px;
+    background: #2ab2af;
+}
+
+
+h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+span {
+    font-size: 16px;
+    color: grey;
+    font-weight: 400;
+}
+
+.box2-pgraph {
+    color: beige;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+input {
+    margin-top: 60px;
+    border: none;
+    background: #c0df34;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+}
+
+.box3 {
+    color: #fff;
+    font-size: 16px;
+    padding: 30px;
+    background: #98a6bd;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 16px;
+}
+
+ul {
+    font-size: 16px;
+    line-height: 1.3;
+    list-style: none;
+}
+
+/* for mobile devices */
+
+@media (max-width: 375px) {
+    main {
+        padding: 20px;
+        height: 800px;
+        width: 375px;
+    }
+    
+    .container {
+        max-width: 370px;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, fit-content(320px));
+        grid-template-rows: repeat(3, fit-content(220px));        
+    }
+    
+    .first-pgraph {
+        width: 285px;
+    }
+    
+}
